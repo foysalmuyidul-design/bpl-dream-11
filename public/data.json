@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Virat Kohli",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/305300/305339.jpg",
+    "origin": "India",
+    "playertype": "Batsman",
+    "bowlingstyle": "Right-arm medium",
+    "battingstyle": "Right-hand bat",
+    "price": 20000000
+  },
+  {
+    "name": "Rohit Sharma",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/305300/305339.jpg",
+    "origin": "India",
+    "playertype": "Batsman",
+    "bowlingstyle": "Right-arm off-break",
+    "battingstyle": "Right-hand bat",
+    "price": 18000000
+  },
+  {
+    "name": "Jasprit Bumrah","image": "https://p.imgci.com/db/PICTURES/CMS/305300/305339.jpg","origin": "India",
+    "playertype": "Bowler",
+    "bowlingstyle": "Right-arm fast",
+    "battingstyle": "Right-hand bat",
+    "price": 15000000
+  },
+  {
+    "name": "Hardik Pandya",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/305300/305339.jpg",
+    "origin": "India",
+    "playertype": "All-rounder",
+    "bowlingstyle": "Right-arm fast-medium",
+    "battingstyle": "Right-hand bat",
+    "price": 16000000
+  },
+  {
+    "name": "Rashid Khan",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/305300/305339.jpg",
+    "origin": "Afghanistan",
+    "playertype": "Bowler",
+    "bowlingstyle": "Right-arm leg-break",
+    "battingstyle": "Right-hand bat",
+    "price": 14000000
+  },
+  {
+    "name": "Jos Buttler",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/305300/305339.jpg",
+    "origin": "England",
+    "playertype": "Wicketkeeper-Batsman",
+    "bowlingstyle": "Right-arm medium",
+    "battingstyle": "Right-hand bat",
+    "price": 17000000
+  },
+  {
+    "name": "Babar Azam",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/305300/305339.jpg",
+    "origin": "Pakistan",
+    "playertype": "Batsman",
+    "bowlingstyle": "Right-arm off-break",
+    "battingstyle": "Right-hand bat",
+    "price": 16000000
+  },
+  {
+    "name": "Shakib Al Hasan",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/305300/305339.jpg",
+    "origin": "Bangladesh",
+    "playertype": "All-rounder",
+    "bowlingstyle": "Left-arm orthodox",
+    "battingstyle": "Left-hand bat",
+    "price": 12000000
+  },
+  {
+    "name": "Trent Boult",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/305300/305339.jpg",
+    "origin": "New Zealand",
+    "playertype": "Bowler",
+    "bowlingstyle": "Left-arm fast-medium",
+    "battingstyle": "Left-hand bat",
+    "price": 11000000
+  },
+  {
+    "name": "Glenn Maxwell",
+    "image": "https://p.imgci.com/db/PICTURES/CMS/305300/305339.jpg",
+    "origin": "Australia",
+    "playertype": "All-rounder",
+    "bowlingstyle": "Right-arm off-break",
+    "battingstyle": "Right-hand bat",
+    "price": 13000000
+  }
+]
