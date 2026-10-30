@@ -7,7 +7,8 @@ export interface Iplayer {
     playertype: string,
     bowlingstyle: string,
     battingstyle: string,
-    price: number
+    price: number,
+    isSelected: boolean
 
 }
 
@@ -21,10 +22,19 @@ export interface IavailablePlayerProps {
   players : Iplayer[]  
   coin : number
   setCoin : Dispatch<SetStateAction<number>>
+  selectPlayers : Iplayer[]
+  setSelectPlayers : Dispatch<SetStateAction<Iplayer[]>>
 }
 
 export interface IplayerCardProps {
   player : Iplayer  
   coin : number
   setCoin : Dispatch<SetStateAction<number>>
+  selectPlayers : Iplayer[]
+  setSelectPlayers : Dispatch<SetStateAction<Iplayer[]>>
+}
+
+export interface IselectedPlayerProps {
+  selectPlayers : Iplayer[]
+  setSelectPlayers : Dispatch<SetStateAction<Iplayer[]>>
 }

@@ -4,13 +4,13 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 
-
-const PlayerCard = ({ player, coin, setCoin }: IplayerCardProps) => {
+const PlayerCard = ({ player, coin, setCoin, selectPlayers, setSelectPlayers }: IplayerCardProps) => {
 
     const [isSelected, SetIsSelected] = useState(false)
 
     const handleSelectedPlayer = (Selection: boolean) => {
         SetIsSelected(Selection)
+        
 
         const newCoinAmount = coin - player.price
 
@@ -18,9 +18,9 @@ const PlayerCard = ({ player, coin, setCoin }: IplayerCardProps) => {
         {setCoin(newCoinAmount)
         toast.success(`${player.name} is purchased successfully`)}
         else{toast.error("Coin is not enough")}
-        
-        
 
+        // selected players logic 
+        setSelectPlayers([...selectPlayers, player])
     }
   return (
     
@@ -76,6 +76,8 @@ const PlayerCard = ({ player, coin, setCoin }: IplayerCardProps) => {
                   ${player.price.toLocaleString()}
                 </span>
               </div>
+
+              {/* choose player button */}
               <button
               onClick={() => handleSelectedPlayer(true)}              
               className="btn btn-primary btn-sm md:btn-md rounded-xl shadow-md shadow-primary/10 hover:shadow-lg hover:shadow-primary/20 transition-all"

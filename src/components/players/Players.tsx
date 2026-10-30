@@ -1,5 +1,5 @@
 import { use, useState } from 'react';
-import type { IplayersProps } from '../../types/playerType';
+import type { Iplayer, IplayersProps } from '../../types/playerType';
 import AvailablePlayers from './AvailablePlayers';
 import SelectedPlayers from './SelectedPlayers';
 
@@ -7,7 +7,8 @@ const Players = ({ playersPromise, coin, setCoin }: IplayersProps) => {
 
   const players = use(playersPromise)
 
-  const [buttonType, setButtonType] = useState("Available")
+  const [buttonType, setButtonType] = useState<"Available" | "Selected">("Available")
+  const [selectPlayers, setSelectPlayers] = useState<Iplayer[]>([])
 
   const handleButtonType = (type: "Available" | "Selected") => {
     setButtonType(type)
@@ -32,7 +33,13 @@ const Players = ({ playersPromise, coin, setCoin }: IplayersProps) => {
         </div>
       </div>
 
-      {buttonType === "Available" ? <AvailablePlayers players={players} coin = { coin } setCoin = { setCoin }></AvailablePlayers> : <SelectedPlayers></SelectedPlayers>}
+      {buttonType === "Available" ? <AvailablePlayers 
+      players={players} 
+      coin = { coin } 
+      setCoin = { setCoin } 
+      selectPlayers = { selectPlayers } 
+      setSelectPlayers = { setSelectPlayers }></AvailablePlayers> : <SelectedPlayers selectPlayers = { selectPlayers } 
+      setSelectPlayers = { setSelectPlayers }></SelectedPlayers>}
 
 
       
