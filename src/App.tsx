@@ -12,7 +12,7 @@ const playersFetch = async ():Promise<Iplayer[]> => {
 
 
 function App() {
-  const playersPromise = playersFetch()
+  const [playersPromise] = useStaet(()=>playersFetch())
   const [coin, setCoin] = useState(100000000)
  
 
